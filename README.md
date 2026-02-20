@@ -602,6 +602,18 @@ cockpit starmap mslayers \
   --schema-version 'v1.0.0'
 ```
 
+#### Get Charts
+Retrieves all non-private charts from registry.
+
+- **Command**: `cockpit starmap charts`
+
+- **Example**:
+
+```sh
+cockpit starmap charts
+```
+
+
 #### Delete Chart
 Deletes a chart from the registry and cleans up orphaned nodes from the graph database.
 
