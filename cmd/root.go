@@ -75,6 +75,7 @@ func init() {
 	StarmapCmd.AddCommand(get.GetStarmapChartById)
 	StarmapCmd.AddCommand(get.GetStarmapChartByMetadata)
 	StarmapCmd.AddCommand(get.GetStarmapChartTimeline)
+	StarmapCmd.AddCommand(get.GetStarmapAllCharts)
 	GetCmd.AddCommand(get.GetSchemaCmd)
 	GetCmd.AddCommand(GetConfigCmd)
 	GetCmd.AddCommand(GetStandaloneConfigCmd)

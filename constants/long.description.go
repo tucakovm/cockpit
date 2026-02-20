@@ -196,6 +196,11 @@ Example:
 - Retrieve the latest version by chart ID:
   cockpit starmap metadata --id 'a0715e59-49c3-4323-bf34-fbb4ccb7e8r4' --maintainer 'org' --namespace 'dev'`
 
+	GetStarmapAllChartsLongDesc = `This command retrieves all non-private charts from the StarMap registry.
+Example:
+- Retrieve all public charts:
+  cockpit starmap charts`
+
 	GetStarmapLabelsLongDesc = `This option allows you to filter StarMap charts using labels.
 Labels are specified as key-value pairs and can be provided multiple times.
 Only charts that match all specified labels will be considered.

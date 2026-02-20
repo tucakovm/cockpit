@@ -26,6 +26,7 @@ const (
 	GetStandaloneConfigShortDesc             = "Retrieve and display the standalone configuration"
 	GetStarmapChartByMetadataShortDesc       = "Retrieve Starmap chart by metadata"
 	GetStarmapChartByIdShortDesc             = "Retrieve Starmap chart by id"
+	GetStarmapAllChartsShortDesc             = "Retrieve all Starmap charts"
 	GetStarmapChartsByLabelsShortDesc        = "Retrieve Starmap charts by labels"
 	GetStarmapChartMissingLayersShortDesc    = "Retrieve Starmap chart missing layers"
 	GetStarmapChartTimelineShortDesc         = "Retrieve chronological view of all versions of a chart"
