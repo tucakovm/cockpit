@@ -510,7 +510,7 @@ Retrieves a complete chart based on provided metadata.
 - **Options**:
   - `--maintainer`: chart maintainer (required).
   - `--name`: chart name (required).
-  - `--namespace`: chart namespace (required).
+  - `--namespace`: chart namespace (optional).
   - `--schema-version`: chart version (optional).
 - **Example**:
 
@@ -533,7 +533,7 @@ Retrieves a complete chart based on provided id.
 - **Options**:
   - `--maintainer`: chart maintainer (required).
   - `--id`: chart id (required).
-  - `--namespace`: chart namespace (required).
+  - `--namespace`: chart namespace (optional).
   - `--schema-version`: chart version (optional).
 - **Example**:
 
@@ -557,7 +557,7 @@ Retrieves charts based on provided namespace, maintainer, labels, and schema ver
 - **Command**: `cockpit starmap labels`
 - **Options**:
   - `--maintainer`: Chart maintainer (required)
-  - `--namespace`: Chart namespace (required)
+  - `--namespace`: Chart namespace (optional)
   - `--labels`: Chart labels in `key=value` format (required)
   - `--schema-version`: Chart version (optional)
 
@@ -586,7 +586,7 @@ Retrieves chart layers that are present in the registry but missing from the pro
 - **Options**:
   - `--id`: Chart ID (required)
   - `--maintainer`: Chart maintainer (required)
-  - `--namespace`: Chart namespace (required)
+  - `--namespace`: Chart namespace (optional)
   - `--layers`: Layer hash (can be specified multiple times) (required)
   - `--schema-version`: Chart version (optional)
 
@@ -682,7 +682,7 @@ Returns a chronological view of all versions of a chart.
 - **Command**: `cockpit starmap timeline`
 - **Options**:
   - `--id`: Chart ID (required)
-  - `--namespace`: Chart namespace (required)
+  - `--namespace`: Chart namespace (optional)
   - `--maintainer`: Chart maintainer (required)
 
 - **Example**:

@@ -161,12 +161,19 @@ type Metadata struct {
 	Id          string            `json:"id" yaml:"id"`
 	Name        string            `json:"name" yaml:"name"`
 	Image       string            `json:"image,omitempty" yaml:"image,omitempty"`
+	Build       Build             `json:"build,omitempty" yaml:"build,omitempty"`
 	Hash        string            `json:"hash,omitempty" yaml:"hash,omitempty"`
 	Prefix      string            `json:"prefix,omitempty" yaml:"prefix,omitempty"`
 	Topic       string            `json:"topic,omitempty" yaml:"topic,omitempty"`
 	Description string            `json:"description,omitempty" yaml:"description,omitempty"`
 	Labels      map[string]string `json:"labels,omitempty" yaml:"labels,omitempty"`
 	TriggerHash string            `json:"triggerHash,omitempty" yaml:"triggerHash,omitempty"`
+}
+
+type Build struct {
+	Pull    string `json:"pull" yaml:"pull"`
+	Workdir string `json:"workdir" yaml:"workdir"`
+	Command string `json:"command" yaml:"command"`
 }
 
 type Control struct {
