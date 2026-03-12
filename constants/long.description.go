@@ -231,6 +231,24 @@ It provides an ordered view of chart versions, allowing users to track evolution
 Example:
 - cockpit starmap timeline --id 'a0715e59-49c3-4323-bf34-fbb4ccb7e8r4' --namespace 'namespace1' --maintainer 'Nikola'`
 
+	SearchStarmapLongDesc = `This command searches for components across all charts based on name, description, and tags.
+You can filter results by providing any combination of name, description, and tag key-value pairs.
+Results include matching DataSources, StoredProcedures, EventTriggers, and Events.
+Each --tag flag represents one key=value pair. You can repeat the flag multiple times to filter by multiple tags.
+
+Example:
+- Search for components by name:
+  cockpit starmap search --name 'event2'
+
+- Search by description:
+  cockpit starmap search --description 'some description'
+
+- Search by tags:
+  cockpit starmap search --tag env=prod --tag region=us-east
+
+- Combined search:
+  cockpit starmap search --name 'event2' --description 'some description' --tag env=prod`
+
 	AllocatedNodesLongDesc = `This command allows you to list all nodes allocated to a specified organization.
 You can also use a query to search for nodes based on their labels.
 The query format allows you to filter nodes using operators like >, =, !=, and < with the label values.

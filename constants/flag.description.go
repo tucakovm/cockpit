@@ -27,10 +27,12 @@ const (
 	ChartNameDescription          = "Chart name(required)"
 	ChartVersionDescription       = "Chart version"
 	ChartIdDescription            = "Chart id(required)"
+	ChartDescription              = "Chart description"
 	ChartLabelsDescription        = "Chart labels"
 	ChartMissingLayers            = "Chart missing layers"
 	ChartLayers                   = "Chart exist layers"
 	ChartKindDescription          = "Chart kind"
 	OldChartVersion               = "Old chart version"
 	NewChartVersion               = "New chart version"
+	StarmapLayerTags              = "Starmap layer tags"
 )

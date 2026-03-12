@@ -30,6 +30,7 @@ const (
 	GetStarmapChartsByLabelsShortDesc        = "Retrieve Starmap charts by labels"
 	GetStarmapChartMissingLayersShortDesc    = "Retrieve Starmap chart missing layers"
 	GetStarmapChartTimelineShortDesc         = "Retrieve chronological view of all versions of a chart"
+	SearchStarmapShortDesc                   = "Search Starmap components"
 	LatestMetricsShortDesc                   = "Retrieve and display the latest metrics"
 	GetSchemaShortDesc                       = "Retrieve and display the schema"
 	GetSchemaVersionShortDesc                = "Retrieve and display schema versions"

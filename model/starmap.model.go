@@ -62,6 +62,13 @@ type SwitchCheckpointReq struct {
 	Layers     []string `json:"layers,omitempty" yaml:"layers,omitempty"`
 }
 
+type LayersResp struct {
+	DataSources      map[string]*DataSource      `json:"dataSources,omitempty" yaml:"dataSources,omitempty"`
+	StoredProcedures map[string]*StoredProcedure `json:"storedProcedures,omitempty" yaml:"storedProcedures,omitempty"`
+	EventTriggers    map[string]*EventTrigger    `json:"eventTriggers,omitempty" yaml:"eventTriggers,omitempty"`
+	Events           map[string]*Event           `json:"events,omitempty" yaml:"events,omitempty"`
+}
+
 type SwitchCheckpointResp struct {
 	Start struct {
 		DataSources      map[string]*DataSource      `json:"dataSources,omitempty" yaml:"dataSources,omitempty"`

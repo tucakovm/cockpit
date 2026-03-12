@@ -708,6 +708,34 @@ cockpit starmap extend \
   --path 'request/starmap/extendChart.json'
 ```
 
+#### Search Components
+
+Searches for components across all charts based on name, description, and tags. Results include matching DataSources, StoredProcedures, EventTriggers, and Events.
+
+- **Command**: `cockpit starmap search`
+- **Options**:
+  - `--name`: Filter by component name (optional)
+  - `--description`: Filter by component description (optional)
+  - `--tag`: Filter by tag key=value pair, can be repeated for multiple tags (optional)
+
+- **Example**:
+```sh
+# Search by name
+cockpit starmap search --name 'event2'
+
+# Search by description
+cockpit starmap search --description 'some description'
+
+# Search by tags
+cockpit starmap search --tag env=prod --tag region=us-east
+
+# Combined search
+cockpit starmap search \
+  --name 'event2' \
+  --description 'some description' \
+  --tag env=prod
+```
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:

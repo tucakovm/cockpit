@@ -30,4 +30,6 @@ const (
 	KindFlag          = "kind"
 	OldVersionFlag    = "old-version"
 	NewVersionFlag    = "new-version"
+	DescriptionFlag   = "description"
+	TagFlag           = "tag"
 )
